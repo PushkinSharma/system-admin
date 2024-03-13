@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/admin-styles.css" />
+    <link rel="stylesheet" href="css/admin-variables.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="nav">
+        <h3 class="nav-heading">Healthfort</h3>
+        <button class="btn btn-logout">
+          <span class="icon-logout">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-box-arrow-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+              />
+            </svg>
+          </span>
+          Logout
+        </button>
+      </div>
+
+      <div class="header-content">
+        <h4>Good Morning, Hemant</h4>
+        <p>Welcome back to Healthfort's admin module</p>
+      </div>
+    </header>
+
+    <main class="center-area">
+      <div class="metrics">
+        <div class="clinics">
+          <h5>Total Clinics</h5>
+          <h2>45</h2>
+        </div>
+        <div class="monthly-rev">
+          <h5>Total Clinics</h5>
+          <h2>45</h2>
+        </div>
+        <div class="payment-pending">
+          <h5>Total Clinics</h5>
+          <h2>45</h2>
+        </div>
+      </div>
+      <div class="search-clinic">
+        <div class="search-clinic-text">
+          <h5>Search Clinic</h5>
+          <p>Search for a clinic by name or status</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" class="form-control" placeholder="Search" />
+        </div>
+        <button class="btn btn-new-clinic">Add New Clinic</button>
+      </div>
+
+      <table class="clinic-table">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th> Clinic Name</th>
+            <th> Contact Number </th>
+            <th>Status </th>
+            <th> Payment Status </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="clinic-content">
+                <p class="clinic-name">Max Super Speciality Hospital</hp>
+                <p class="clinic-address">Noida, Sector 16, Delhi / NCR</p>
+              </div>
+            </td>
+            <td class="contact-number">+91 - 73837-98372</td>
+            <td class="clinic-status">Activation Pending</td>
+            <td>
+              <div class="payment-status">
+                <div class="payment-info">
+                  <h6>$15,000</h6>
+                  <div class="due-chip">Due in 3 days</div>
+                </div>
+                <div class="right-arrow">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.42499 16.6L12.8583 11.1667C13.5 10.525 13.5 9.475 12.8583 8.83334L7.42499 3.4" stroke="#1C3FCA" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></span>
+                </div>
+                
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="clinic-content">
+                <p class="clinic-name">Max Super Speciality Hospital</hp>
+                <p class="clinic-address">Noida, Sector 16, Delhi / NCR</p>
+              </div>
+            </td>
+            <td class="contact-number">+91 - 73837-98372</td>
+            <td class="clinic-status">Activation Pending</td>
+            <td>
+              <div class="payment-status">
+                <div class="payment-info">
+                  <h6>$15,000</h6>
+                  <div class="due-chip">Due in 3 days</div>
+                </div>
+                <div class="right-arrow">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.42499 16.6L12.8583 11.1667C13.5 10.525 13.5 9.475 12.8583 8.83334L7.42499 3.4" stroke="#1C3FCA" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></span>
+                </div>
+                
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="clinic-content">
+                <p class="clinic-name">Max Super Speciality Hospital</hp>
+                <p class="clinic-address">Noida, Sector 16, Delhi / NCR</p>
+              </div>
+            </td>
+            <td class="contact-number">+91 - 73837-98372</td>
+            <td class="clinic-status">Activation Pending</td>
+            <td>
+              <div class="payment-status">
+                <div class="payment-info">
+                  <h6>$15,000</h6>
+                  <div class="due-chip">Due in 3 days</div>
+                </div>
+                <div class="right-arrow">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.42499 16.6L12.8583 11.1667C13.5 10.525 13.5 9.475 12.8583 8.83334L7.42499 3.4" stroke="#1C3FCA" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></span>
+                </div>
+                
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

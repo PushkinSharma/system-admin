@@ -1,0 +1,174 @@
+body {
+  font-family: var(--font-primary);
+}
+
+/* Header */
+
+.header-container {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 32, 74, 1) 0%,
+    rgba(26, 179, 171, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  color: white;
+}
+
+.nav-heading {
+  flex-grow: 1;
+}
+
+.btn-logout {
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.icon-logout {
+  margin-right: 5px;
+}
+
+.header-content {
+  padding: 2rem 4rem;
+  color: white;
+}
+
+/* Main */
+
+.center-area {
+  margin: 0 4rem 4rem 4rem;
+}
+
+.metrics {
+  display: flex;
+  /* z-index:2; */
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.search-clinic {
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-clinic-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-new-clinic {
+  background-color: var(--color-cta);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.clinic-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #ddd; /* Add border around the table */
+  border-radius: 1.25rem; /* Apply border-radius */
+  position: relative; /* Add relative positioning for pseudo-elements */
+}
+
+.clinic-table th {
+  background-color: #00204a;
+  color: white;
+  padding: 1.5rem;
+}
+
+.clinic-table td {
+  padding: 1.5rem;
+}
+
+/* Add line after every row */
+.clinic-table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Add line after every row with margin */
+.clinic-table tbody tr {
+  position: relative;
+}
+
+.clinic-table tbody tr::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.clinic-table tbody tr:last-child::after {
+  display: none;
+}
+
+.clinic-content p {
+  margin-bottom: 0;
+}
+
+.clinic-name,
+.clinic-status,
+.contact-number {
+  font-size: 0.975rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: var(--color-table-text);
+}
+
+.clinic-address {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: var(--color-table-secondary);
+}
+
+.payment-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.due-chip {
+  padding: 0.5rem;
+  background-color: #fdefed; /* Red color for the chip */
+  color: #e22853;
+  border-radius: 0.75rem;
+  width: fit-content;
+  padding: 0rem 0.375rem;
+}
+
+/* New Clinic Page */
+
+.back-to-dash {
+  padding: 0 4rem;
+  color: white;
+}

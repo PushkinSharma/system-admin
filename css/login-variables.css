@@ -1,0 +1,22 @@
+/* variables.css */
+
+:root {
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+  
+    /* Font Family */
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+  
+    /* Colors */
+    --color-primary: #0C2539;
+    --color-neutral: #4B5563;
+    --color-mid-neutral: #6B7280;
+    --color-light-neutral: #D2D5DB;
+    --color-cta:#1575C6;
+  }
+  
