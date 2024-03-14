@@ -171,9 +171,54 @@
           stroke-dasharray="2 6"
         />
       </svg>
-      <button class="btn btn-new-clinic" style="margin: 1rem 4rem">
+      <button
+        class="btn btn-new-clinic"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        style="margin: 1rem 4rem"
+      >
         Update Details
       </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+                Update Changes
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              We observed you have updated certain details for this clinic. Shall we update these changes or discard them?
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Discard Changes
+              </button>
+              <button type="button" class="btn btn-primary">
+                Update Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script

@@ -29,19 +29,32 @@
               </svg> </span> Logout </button>
         </div>
         <div class="back-to-dash mt-3">
-            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-              </svg> </span>
-            <a href="/index.html" style="text-decoration: none; color:white">Back</a>
+          <a href="/index.html" class="text-decoration-none d-flex align-items-center" style="color: white;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left mr-2 me-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+            Back
+          </a>
         </div>
         <div class="clinic-details-header">
           <div class="header-content">
             <p> Max Super Speciality </p>
             <p> A364, A Block, Pocket A, Sector 19, Noida, Uttar Pradesh 201301, India </p>
           </div>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
-          </svg></span>
+          <div class="dropdown">
+            <a class="dropdown-toggle" style="color:white" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+              </svg></span>
+            </a>
+          
+            <ul class="dropdown-menu mt-3">
+              <li><a class="dropdown-item" href="/edit-clinic.html">Update Details</a></li>
+              <li><a class="dropdown-item" href="#">Deactivate Clinic</a></li>
+              <li><a class="dropdown-item" href="#">Remove Clinic</a></li>
+            </ul>
+          </div>
+          
            
         </div>
 
@@ -74,8 +87,9 @@
         </div>
       </div>
       <div class="admin-details sub-div">
-        <div class="plan-heading">
+        <div class="plan-heading d-flex justify-content-between">
           <p> Admin Details </p>
+          <button class="btn btn-new-clinic"> Send invite </button>
         </div>
         <div class="plan-content">
           <div class="plan-inner">
@@ -88,9 +102,16 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
       <div class="payment-details sub-div">
-        <div class="plan-heading">
+        <div class="plan-heading d-flex justify-content-between">
           <p> Payment Details </p>
+          <p style="color:#13928C; font-size: 0.95rem;"> $1500 to be paid annually</p>
         </div>
         <div class="plan-content">
           <div class="plan-inner">

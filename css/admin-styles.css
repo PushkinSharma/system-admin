@@ -21,6 +21,26 @@ p {
 
 /* Header */
 
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu{
+  padding:1rem;
+  border-radius:1rem;
+  border-radius: 1rem;
+  border: 1px solid #ECEDF3;
+  box-shadow: 0px 10px 15px -3px rgba(16, 24, 40, 0.10), 0px 4px 6px -4px rgba(16, 24, 40, 0.10);
+}
+
+.dropdown-menu li a{
+font-size: 0.875rem;
+font-weight: 500;
+line-height: 1.25rem; 
+}
+
+
+
 .header-container {
   background: linear-gradient(
     90deg,
