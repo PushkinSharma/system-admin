@@ -20,10 +20,14 @@
     />
   </head>
   <body>
+
+    <!-- Empty Modal Div -->
+    <div id="modal-container"></div>
+
     <header class="header-container">
       <div class="nav">
         <h3 class="nav-heading">Healthfort</h3>
-        <button class="btn btn-logout">
+        <button class="btn btn-logout" id="logoutBtn">
           <span class="icon-logout">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,24 +51,12 @@
         </button>
       </div>
       <div class="back-to-dash mt-3">
-        <span
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            class="bi bi-arrow-left"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-            />
+        <a href="/index.html" class="text-decoration-none d-flex align-items-center" style="color: white;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left mr-2 me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
           </svg>
-        </span>
-        <a href="/index.html" style="text-decoration: none; color: white"
-          >Back</a
-        >
+          Back
+        </a>
       </div>
 
       <div class="new-clinic-header">
@@ -173,52 +165,12 @@
       </svg>
       <button
         class="btn btn-new-clinic"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        style="margin: 1rem 4rem"
+        style="margin: 1rem 4rem;"
+        id="confirmEditBtn"
       >
         Update Details
       </button>
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
-                Update Changes
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              We observed you have updated certain details for this clinic. Shall we update these changes or discard them?
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Discard Changes
-              </button>
-              <button type="button" class="btn btn-primary">
-                Update Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
 
     <script
@@ -226,5 +178,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
