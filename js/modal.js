@@ -34,8 +34,8 @@ window.addEventListener("DOMContentLoaded", () => {
       if (confirmInviteBtn) {
         confirmInviteBtn.addEventListener("click", () =>
           showModal(
-            "Confirm Invites",
-            "Do you want to send the invites?",
+            "Confirm Invite",
+            "Do you want to send the invite?",
             '<button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button><button type="button" class="btn btn-accept" id="confirmInviteBtn">Send Invite</button>'
           )
         );

@@ -20,7 +20,6 @@
     />
   </head>
   <body>
-
     <!-- Empty Modal Div -->
     <div id="modal-container"></div>
 
@@ -51,9 +50,23 @@
         </button>
       </div>
       <div class="back-to-dash mt-3">
-        <a href="/index.html" class="text-decoration-none d-flex align-items-center" style="color: white;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left mr-2 me-2" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        <a
+          href="/index.html"
+          class="text-decoration-none d-flex align-items-center"
+          style="color: white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-left mr-2 me-2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+            />
           </svg>
           Back
         </a>
@@ -67,16 +80,48 @@
     </header>
 
     <main>
+      <!-- Row 1 -->
+
       <div class="add-clinic new-clinic-sub">
         <p>Clinic Details</p>
-        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral);">These details cannot be edited later!</p>
+        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
+          These details cannot be edited later!
+        </p>
         <div class="input-with-icon mb-3">
           <input type="text" placeholder="Clinic Name" />
         </div>
-        <div class="clinic-new-address mb-3">
-          <div class="input-with-icon">
-            <input type="text" placeholder="Country" />
-          </div>
+        <div class="input-four-grid mb-3">
+          <!-- <div class="input-with-icon d-flex flex-row justify-content-between dropdown">
+            <input type="text" placeholder="Country" id="countryInput"/>
+            <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                transform="rotate(90)"
+              >
+                <path
+                  d="M7.42499 16.6L12.8583 11.1667C13.5 10.525 13.5 9.475 12.8583 8.83334L7.42499 3.4"
+                  stroke="#6B7280"
+                  stroke-width="1.3"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+
+            <ul class="dropdown-menu mt-3">
+              <li><a class="dropdown-item" href="/edit-clinic.html">Update Details</a></li>
+              <li><a class="dropdown-item" href="#">Deactivate Clinic</a></li>
+              <li><a class="dropdown-item" href="#">Remove Clinic</a></li>
+            </ul>
+          </div> -->
+          <!-- Container for the input fields -->
+          <div id="inputFieldsContainer" class="input-with-icon d-flex flex-row justify-content-between dropdown"></div>
+
           <div class="input-with-icon">
             <input type="text" placeholder="Pin Code" />
           </div>
@@ -92,15 +137,30 @@
         </div>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg"  class="divider"  viewBox="0 0 942 2" fill="none">
-        <path d="M1 1H941" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 6"/>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="divider"
+        viewBox="0 0 942 2"
+        fill="none"
+      >
+        <path
+          d="M1 1H941"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="2 6"
+        />
       </svg>
 
-      <div class="add-admin new-clinic-sub">
+      <!-- Row 2 -->
 
-        <p> Admin Contact </p>
-        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral);">Login link & password would be sent to the mentioned contact details. Please confirm with the client for the following details.</p>
-        <div class="clinic-new-address mb-3">
+      <div class="add-admin new-clinic-sub">
+        <p>Admin Contact</p>
+        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
+          Login link & password would be sent to the mentioned contact details.
+          Please confirm with the client for the following details.
+        </p>
+        <div class="input-four-grid mb-3">
           <div class="input-with-icon">
             <input type="text" placeholder="Email ID" />
           </div>
@@ -109,13 +169,27 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg"  class="divider"  viewBox="0 0 942 2" fill="none">
-        <path d="M1 1H941" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 6"/>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="divider"
+        viewBox="0 0 942 2"
+        fill="none"
+      >
+        <path
+          d="M1 1H941"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="2 6"
+        />
       </svg>
-      <div class="add-plan new-clinic-sub">
-        <p class="mb-3"> Plan Details </p>
 
-        <div class="clinic-new-address mb-3">
+      <!-- Row 3 -->
+
+      <div class="add-plan new-clinic-sub">
+        <p class="mb-3">Plan Details</p>
+
+        <div class="input-four-grid mb-3">
           <div class="input-with-icon">
             <input type="text" placeholder="Category" />
           </div>
@@ -129,15 +203,31 @@
             <input type="text" placeholder="Plan ends on" />
           </div>
         </div>
-
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg"  class="divider"  viewBox="0 0 942 2" fill="none">
-        <path d="M1 1H941" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 6"/>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="divider"
+        viewBox="0 0 942 2"
+        fill="none"
+      >
+        <path
+          d="M1 1H941"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="2 6"
+        />
       </svg>
+
+      <!-- Row 4 -->
+
       <div class="add-payment new-clinic-sub">
-        <p> Payment Details </p>
-        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral);">Current status and details of payment from clinic</p>
-        <div class="clinic-new-address mb-3">
+        <p>Payment Details</p>
+        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
+          Current status and details of payment from clinic
+        </p>
+        <div class="input-four-grid mb-3">
           <div class="input-with-icon">
             <input type="text" placeholder="Payment Status" />
           </div>
@@ -152,10 +242,27 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg"  class="divider"  viewBox="0 0 942 2" fill="none">
-        <path d="M1 1H941" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 6"/>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="divider"
+        viewBox="0 0 942 2"
+        fill="none"
+      >
+        <path
+          d="M1 1H941"
+          stroke="black"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-dasharray="2 6"
+        />
       </svg>
-      <button class="btn btn-new-clinic" id="confirmChangesBtn" style="margin:1rem 4rem;"> Add Clinic </button>
+      <button
+        class="btn btn-new-clinic"
+        id="confirmChangesBtn"
+        style="margin: 1rem 4rem"
+      >
+        Add Clinic
+      </button>
     </main>
 
     <script
@@ -164,5 +271,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/modal.js"></script>
+    <script src="js/dropdowns.js"></script>
   </body>
 </html>
