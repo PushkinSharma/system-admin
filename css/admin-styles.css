@@ -6,18 +6,6 @@ p {
   margin-bottom: 0;
 }
 
-/* .container,
-.container-fluid {
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.row{
-    margin-right: 0;
-    padding-left: 0;
-} */
 
 /* Header */
 
@@ -31,6 +19,12 @@ p {
   border-radius: 1rem;
   border: 1px solid #ECEDF3;
   box-shadow: 0px 10px 15px -3px rgba(16, 24, 40, 0.10), 0px 4px 6px -4px rgba(16, 24, 40, 0.10);
+}
+
+.dropdown-menu li{
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.25rem;
 }
 
 .dropdown-menu li a{
@@ -73,6 +67,11 @@ line-height: 1.25rem;
   font-weight: 600;
   line-height: 1.5rem;
   border-radius: 0.5rem;
+}
+
+.btn-logout:hover{
+  background-color: rgb(0, 32, 74, 1);
+  border:1px solid transparent;
 }
 
 .icon-logout {
@@ -187,6 +186,7 @@ padding-bottom:0.5rem;
   border: 1px solid var(--color-cta);
 }
 
+
 /* CLINIC TABLE */
 
 .clinic-table {
@@ -257,14 +257,37 @@ padding-bottom:0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .payment-info {
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
 }
-.due-chip {
+
+.payment-chip{
+  border-radius: 0.75rem;
+  width: fit-content;
+  padding: 0rem 0.375rem;
+}
+
+.chip-red {
+  background-color: #fdefed; /* Red color for the chip */
+  color: #e22853;
+}
+
+.chip-green {
+  background-color: #edfbed; /* Green color for the chip */
+  color: #2ea155; /* Text color */
+}
+
+
+.chip-grey{
+  background-color: #F5F6FB;
+  color: var(--color-table-text);
+}
+
+.due-chip-red {
   padding: 0.5rem;
   background-color: #fdefed; /* Red color for the chip */
   color: #e22853;
@@ -272,6 +295,8 @@ padding-bottom:0.5rem;
   width: fit-content;
   padding: 0rem 0.375rem;
 }
+
+
 
 /* New Clinic Page */
 
@@ -426,6 +451,7 @@ padding-bottom:0.5rem;
   margin-top: 0;
   width:20px;
   height: 20px;
+  margin-right: 1rem;
 }
 
 .modal-header{

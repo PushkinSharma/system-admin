@@ -127,7 +127,7 @@
           <tr>
             <th>Clinic Name</th>
             <th>Contact Number</th>
-            <th>
+            <!-- <th>
               <div class="status d-flex align-items-center">
                 <p style="margin-right: 5px">Status</p>
                 <svg
@@ -144,8 +144,38 @@
                   />
                 </svg>
               </div>
-            </th>
+            </th> -->
             <th>
+              <div class="filter-status d-flex align-items-center">
+                <p style="margin-right: 5px">Status</p>
+                <div class="dropdown">
+                  <a class="dropdown-toggle" href="#" role="button" id="statusDropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="color:white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-funnel filter-icon" viewBox="0 0 16 16">
+                      <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu px-4" aria-labelledby="statusDropdown">
+                    <li>
+                      <div class="dropdown-header modal-title p-0">Show clinics with status</div>
+                    </li>
+                    <li class="pt-2"><input class="form-check-input" type="checkbox" id="active"><label for="active" class="form-check-label">Active</label></li>
+                    <li><input class="form-check-input" type="checkbox" id="activation"><label for="activation" class="form-check-label">Activation Pending</label></li>
+                    <li class="pb-3"><input class="form-check-input" type="checkbox" id="expired"><label for="expired" class="form-check-label">Expired</label></li>
+                    <!-- <li>
+                      <div class="dropdown-divider"></div>
+                    </li> -->
+                    
+                    <div class="dropdown-btns d-flex flex-row justify-content-evenly">
+                        <button class="btn btn-cancel" type="button">Cancel</button>
+                        <button class="btn btn-accept" type="button">Apply</button>
+                    </div>
+                    
+                  </ul>
+                </div>
+              </div>
+            </th>
+            
+            <!-- <th>
               <div class="status d-flex align-items-center">
                 <p style="margin-right: 5px">Payment Status</p>
                 <svg
@@ -161,6 +191,37 @@
                     d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
                   />
                 </svg>
+              </div>
+            </th> -->
+
+            <th>
+              <div class="filter-payment d-flex align-items-center">
+                <p style="margin-right: 5px"> Payment Status</p>
+                <div class="dropdown">
+                  <a class="dropdown-toggle" href="#" role="button" id="statusDropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="color:white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-funnel filter-icon" viewBox="0 0 16 16">
+                      <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu px-4" aria-labelledby="statusDropdown">
+                    <li>
+                      <div class="dropdown-header modal-title p-0">Show clinics with payment</div>
+                    </li>
+                    <li class="pt-2"><input class="form-check-input" type="checkbox" id="option1"><label for="option1" class="form-check-label">Overdue</label></li>
+                    <li><input class="form-check-input" type="checkbox" id="option2"><label for="option2" class="form-check-label">Due this week</label></li>
+                    <li><input class="form-check-input" type="checkbox" id="option3"><label for="option3" class="form-check-label">Due this week</label></li>
+                    <li><input class="form-check-input" type="checkbox" id="option4"><label for="option4" class="form-check-label">Due this month</label></li>
+                    <li><input class="form-check-input" type="checkbox" id="option5"><label for="option5" class="form-check-label">Due this quarter</label></li>
+                    <li class="pb-3"><input class="form-check-input" type="checkbox" id="option6"><label for="option6" class="form-check-label">Paid</label></li>
+                    
+                    
+                    <div class="dropdown-btns d-flex flex-row justify-content-evenly">
+                        <button class="btn btn-cancel" type="button">Cancel</button>
+                        <button class="btn btn-accept" type="button">Apply</button>
+                    </div>
+                    
+                  </ul>
+                </div>
               </div>
             </th>
           </tr>
@@ -181,7 +242,7 @@
               <div class="payment-status">
                 <div class="payment-info">
                   <h6>$15,000</h6>
-                  <div class="due-chip">Due in 3 days</div>
+                  <div class="payment-chip chip-red">Due in 3 days</div>
                 </div>
                 <div class="right-arrow">
                   <a href="/clinic-details.html" class="text-decoration-none">
@@ -223,7 +284,7 @@
               <div class="payment-status">
                 <div class="payment-info">
                   <h6>$15,000</h6>
-                  <div class="due-chip">Due in 3 days</div>
+                  <div class="payment-chip chip-red">Due in 3 days</div>
                 </div>
                 <div class="right-arrow">
                   <a href="/clinic-details.html" class="text-decoration-none">
@@ -260,12 +321,12 @@
               </div>
             </td>
             <td class="contact-number">+91 - 73837-98372</td>
-            <td class="clinic-status">Activation Pending</td>
+            <td class="clinic-status">Active</td>
             <td>
               <div class="payment-status">
                 <div class="payment-info">
                   <h6>$15,000</h6>
-                  <div class="due-chip">Due in 3 days</div>
+                  <div class="payment-chip chip-green">Paid</div>
                 </div>
                 <div class="right-arrow">
                   <a href="/clinic-details.html" class="text-decoration-none">
@@ -296,7 +357,7 @@
       </table>
 
       <!-- Modal HTML -->
-      <div
+      <!-- <div
         class="modal fade"
         id="filterModal"
         tabindex="-1"
@@ -315,7 +376,7 @@
               ></button>
             </div>
             <div class="modal-body" id="filterModalContent">
-              <!-- Modal content will be dynamically added here -->
+              
             </div>
             <div class="modal-footer">
               <button
@@ -331,7 +392,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      
     </main>
 
     <script
@@ -340,6 +402,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/modal.js"></script>
-    <script src="js/modal-filter.js"></script>
+    <!-- <script src="js/modal-filter.js"></script> -->
   </body>
 </html>

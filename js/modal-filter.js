@@ -32,8 +32,8 @@ var filterContent1 = `
         </label>
       </div>
       <div class="form-check d-flex align-items-center">
-        <input class="form-check-input me-3" type="checkbox" value="" id="option2">
-        <label class="form-check-label" for="option2">
+        <input class="form-check-input me-3" type="checkbox" value="" id="option3">
+        <label class="form-check-label" for="option3">
           Activation Pending
         </label>
       </div>
@@ -60,23 +60,23 @@ var filterContent2 = `
         </label>
       </div>
       <div class="form-check d-flex align-items-center">
-      <input class="form-check-input me-3" type="checkbox" value="" id="option1">
-      <label class="form-check-label" for="option1">
+      <input class="form-check-input me-3" type="checkbox" value="" id="option3">
+      <label class="form-check-label" for="option3">
         Due this month
       </label>
         </div>
         <div class="form-check d-flex align-items-center">
-        <input class="form-check-input me-3" type="checkbox" value="" id="option1">
-        <label class="form-check-label" for="option1">
+        <input class="form-check-input me-3" type="checkbox" value="" id="option4">
+        <label class="form-check-label" for="option4">
         Due this quarter
         </label>
         </div>
-    <div class="form-check d-flex align-items-center">
-    <input class="form-check-input me-3" type="checkbox" value="" id="option1">
-    <label class="form-check-label" for="option1">
+      <div class="form-check d-flex align-items-center">
+        <input class="form-check-input me-3" type="checkbox" value="" id="option5">
+        <label class="form-check-label" for="option5">
         Paid
-    </label>
-    </div>
+        </label>
+      </div>
     </form>
   `;
 
