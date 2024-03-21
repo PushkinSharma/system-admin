@@ -331,19 +331,40 @@ padding-bottom:0.5rem;
   flex-direction: column;
   flex: 0 0 calc(50% - 10px);
   width: 100%;
-  padding: 1rem 1.25rem;
   border: 1px solid var(--color-light-neutral);
   border-radius: 0.75rem;
+  padding-right: 1rem;
 }
 
-.input-with-icon::placeholder {
-    font-size: 0.875rem;
-    font-weight:400;
-    color: var(--color-neutral);
-  }
 
-.input-with-icon input {
+.input-with-icon select {
+  width: 100%; /* Make the select element fill the container */
+  padding: 1rem 1.25rem; /* Add padding for styling consistency */
+  border: none; /* Remove default border */
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-table-text);
+}
+
+.input-with-icon select option {
+  /* padding: 1rem 1.25rem; */
   border: none;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-table-text);
+}
+
+.input-with-icon select:focus {
+  outline: none;
+}
+
+
+ .input-with-icon input {
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 0.75rem;
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--color-table-text);
@@ -353,9 +374,13 @@ padding-bottom:0.5rem;
   outline: none;
 }
 
-/* .input-with-icon:focus-within {
+.input-with-icon input::placeholder{
+  color:var(--color-table-text);
+}
+
+ .input-with-icon:focus-within {
     border: 1px solid black; 
-  } */
+  }
 
 .input-four-grid {
   display: flex;
