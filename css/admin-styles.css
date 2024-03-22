@@ -326,11 +326,34 @@ padding-bottom:0.5rem;
   line-height: 1.5rem;
 }
 
-.input-with-icon {
+
+.input-four-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.input-container{
   display: flex;
   flex-direction: column;
   flex: 0 0 calc(50% - 10px);
   width: 100%;
+}
+
+.error-message, .global-error{
+  display: none;
+  color: red;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.input-with-icon {
+  display: flex;
+  flex-direction: column;
+
   border: 1px solid var(--color-light-neutral);
   border-radius: 0.75rem;
   padding-right: 1rem;
@@ -381,13 +404,6 @@ padding-bottom:0.5rem;
  .input-with-icon:focus-within {
     border: 1px solid black; 
   }
-
-.input-four-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
 
 .add-payment{
     padding:2rem 4rem 0.5rem 4rem;

@@ -82,187 +82,315 @@
     <main>
       <!-- Row 1 -->
 
-      <div class="add-clinic new-clinic-sub">
-        <p>Clinic Details</p>
-        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
-          These details cannot be edited later!
-        </p>
-        <div class="input-with-icon mb-3">
-          <input type="text" placeholder="Clinic Name" />
+      <form id="newClinicForm" onsubmit="validateForm(event)">
+        <div class="add-clinic new-clinic-sub">
+          <p>Clinic Details</p>
+          <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
+            These details cannot be edited later!
+          </p>
+          <div class="input-container mb-3">
+            <div class="input-with-icon">
+              <input id="clinicName" type="text" placeholder="Clinic Name" />
+            </div>
+            <div class="global-error">
+              This field is mandatory.
+            </div>
+          </div>
+          
+          <div class="input-four-grid mb-3">
+            
+            <div class="input-container">
+              <div class="input-with-icon">
+                <select id="country">
+                  <option value="" selected disabled>Country</option>
+                  <option value="pin1">Country 1</option>
+                  <option value="pin2">Country 2</option>
+                  <option value="pin3">Country 3</option>
+                </select>
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+            
+            <div class="input-container">
+              <div class="input-with-icon">
+                <input id="pincode" type="text" placeholder="Pin Code" />
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+  
+            
+            <div class="input-container">
+              <div class="input-with-icon">
+                <select id="state">
+                  <option value="" selected disabled>State</option>
+                  <option value="state1">State 1</option>
+                  <option value="state2">State 2</option>
+                  <option value="state3">State 3</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+  
+            
+            <div class="input-container">
+              <div class="input-with-icon">
+                <select id="city">
+                  <option value="" selected disabled>City</option>
+                  <option value="city1">City 1</option>
+                  <option value="city2">City 2</option>
+                  <option value="city3">City 3</option>
+                </select>
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+            
+          </div>
+  
+          <div class="input-container">
+            <div class="input-with-icon">
+              <input id="address" type="text" placeholder="Address" />
+            </div>
+            <div class="global-error">
+              This field is mandatory.
+            </div>
+          </div>
+          
         </div>
-        <div class="input-four-grid mb-3">
-          <!-- <div class="input-with-icon d-flex flex-row justify-content-between dropdown">
-            <input type="text" placeholder="Country" id="countryInput"/>
-            <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                transform="rotate(90)"
-              >
-                <path
-                  d="M7.42499 16.6L12.8583 11.1667C13.5 10.525 13.5 9.475 12.8583 8.83334L7.42499 3.4"
-                  stroke="#6B7280"
-                  stroke-width="1.3"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-
-            <ul class="dropdown-menu mt-3">
-              <li><a class="dropdown-item" href="/edit-clinic.html">Update Details</a></li>
-              <li><a class="dropdown-item" href="#">Deactivate Clinic</a></li>
-              <li><a class="dropdown-item" href="#">Remove Clinic</a></li>
-            </ul>
-          </div> -->
-          <!-- Container for the input fields -->
-          <div id="inputFieldsContainer" class="input-with-icon d-flex flex-row justify-content-between dropdown"></div>
-
-          <div class="input-with-icon">
-            <input type="text" placeholder="Pin Code" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="State" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="City" />
-          </div>
-        </div>
-        <div class="input-with-icon">
-          <input type="text" placeholder="Address" />
-        </div>
-      </div>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="divider"
-        viewBox="0 0 942 2"
-        fill="none"
-      >
-        <path
-          d="M1 1H941"
-          stroke="black"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="2 6"
-        />
-      </svg>
-
-      <!-- Row 2 -->
-
-      <div class="add-admin new-clinic-sub">
-        <p>Admin Contact</p>
-        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
-          Login link & password would be sent to the mentioned contact details.
-          Please confirm with the client for the following details.
-        </p>
-        <div class="input-four-grid mb-3">
-          <div class="input-with-icon">
-            <input type="text" placeholder="Email ID" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Phone Number" />
-          </div>
-        </div>
-      </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="divider"
-        viewBox="0 0 942 2"
-        fill="none"
-      >
-        <path
-          d="M1 1H941"
-          stroke="black"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="2 6"
-        />
-      </svg>
-
-      <!-- Row 3 -->
-
-      <div class="add-plan new-clinic-sub">
-        <p class="mb-3">Plan Details</p>
-
-        <div class="input-four-grid mb-3">
-          <div class="input-with-icon">
-            <input type="text" placeholder="Category" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Product Plan" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Plan starts from" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Plan ends on" />
-          </div>
-        </div>
-      </div>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="divider"
-        viewBox="0 0 942 2"
-        fill="none"
-      >
-        <path
-          d="M1 1H941"
-          stroke="black"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="2 6"
-        />
-      </svg>
-
-      <!-- Row 4 -->
-
-      <div class="add-payment new-clinic-sub">
-        <p>Payment Details</p>
-        <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
-          Current status and details of payment from clinic
-        </p>
-        <div class="input-four-grid mb-3">
-          <div class="input-with-icon">
-            <input type="text" placeholder="Payment Status" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Last payment paid on" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Payment frequency" />
-          </div>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Next payment due on" />
+  
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="divider"
+          viewBox="0 0 942 2"
+          fill="none"
+        >
+          <path
+            d="M1 1H941"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="2 6"
+          />
+        </svg>
+  
+        <!-- Row 2 -->
+  
+        <div class="add-admin new-clinic-sub">
+          <p>Admin Contact</p>
+          <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
+            Login link & password would be sent to the mentioned contact details.
+            Please confirm with the client for the following details.
+          </p>
+          <div class="input-four-grid mb-3">
+            <div class="input-container">
+              <div class="input-with-icon">
+                <input type="text" placeholder="Email ID" id="emailInput" />
+              </div>
+              <div id="emailError" class="error-message">
+                Please enter a valid email ID
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+  
+            <div class="input-container">
+              <div class="input-with-icon">
+                <input type="text" placeholder="Phone Number" id="phoneInput" />
+              </div>
+              <div id="phoneError" class="error-message">
+                Please enter a valid phone number
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="divider"
-        viewBox="0 0 942 2"
-        fill="none"
-      >
-        <path
-          d="M1 1H941"
-          stroke="black"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-dasharray="2 6"
-        />
-      </svg>
-      <button
-        class="btn btn-new-clinic"
-        id="confirmChangesBtn"
-        style="margin: 1rem 4rem"
-      >
-        Add Clinic
-      </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="divider"
+          viewBox="0 0 942 2"
+          fill="none"
+        >
+          <path
+            d="M1 1H941"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="2 6"
+          />
+        </svg>
+  
+        <!-- Row 3 -->
+  
+        <div class="add-plan new-clinic-sub">
+          <p class="mb-3">Plan Details</p>
+  
+          <div class="input-four-grid mb-3">
+  
+            <div class="input-container">
+              <div class="input-with-icon">
+                <select id="category">
+                  <option value="" selected disabled>Category</option>
+                  <option value="cat1">Category 1</option>
+                  <option value="cat2">Category 2</option>
+                  <option value="cat3">Category 3</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+  
+            <div class="input-container">
+              <div class="input-with-icon">
+                <select id="productPlan">
+                  <option value="" selected disabled>Product Plan</option>
+                  <option value="plan1">Plan 1</option>
+                  <option value="plan2">Plan 2</option>
+                  <option value="plan3">Plan 3</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+           
+           
+            <div class="input-container">
+              <div class="input-with-icon">
+                <input id="planStart" type="text" placeholder="Plan starts from" />
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+           
+            <div class="input-container">
+              <div class="input-with-icon">
+                <input id="planEnd" type="text" placeholder="Plan ends on" />
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+            
+          </div>
+        </div>
+  
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="divider"
+          viewBox="0 0 942 2"
+          fill="none"
+        >
+          <path
+            d="M1 1H941"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="2 6"
+          />
+        </svg>
+  
+        <!-- Row 4 -->
+  
+        <div class="add-payment new-clinic-sub">
+          <p>Payment Details</p>
+          <p class="mb-3" style="font-size: 0.85rem; color: var(--color-neutral)">
+            Current status and details of payment from clinic
+          </p>
+          <div class="input-four-grid mb-3">
+            
+            <div class="input-container">
+              <div class="input-with-icon">
+                <select id="paymentStatus">
+                  <option value="" selected disabled>Payment Status</option>
+                  <option value="ps1">1</option>
+                  <option value="ps2">2</option>
+                  <option value="ps3">3</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+            
+            <div class="input-container">
+              <div class="input-with-icon">
+                <input id="lastPayment" type="text" placeholder="Last payment paid on" />
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+            
+            <div class="input-container">
+              <div class="input-with-icon">
+                <select id="paymentFrequency">
+                  <option value="" selected disabled>Payment Frequency</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="quarterly">Quarterly</option>
+                  <option value="annually">Annually</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+           
+            <div class="input-container">
+              <div class="input-with-icon">
+                <input id="nextPayment" type="text" placeholder="Next payment due on" />
+              </div>
+              <div class="global-error">
+                This field is mandatory.
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="divider"
+          viewBox="0 0 942 2"
+          fill="none"
+        >
+          <path
+            d="M1 1H941"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-dasharray="2 6"
+          />
+        </svg>
+  
+        
+        <button
+          type="submit"
+          form="newClinicForm"
+          class="btn btn-new-clinic"
+          id="confirmChangesBtn"
+          style="margin: 1rem 4rem"
+        >
+          Add Clinic
+        </button>
+    
+      </form>
+      
     </main>
 
     <script
@@ -270,7 +398,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/modal.js"></script>
-    <script src="js/dropdowns.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
+    <script src="js/new-clinic-validations.js"></script>
   </body>
 </html>

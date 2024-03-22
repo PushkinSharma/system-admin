@@ -100,6 +100,15 @@ body {
   flex-grow: 1; /* Left-align */
 }
 
+.form-check-input{
+  border: 1px solid var(--color-cta);
+  margin-top: 0;
+  width:1.125rem;
+  height: 1.125rem;
+  margin-right: 0.75rem;
+  border-radius: 0.25em;
+}
+
 .forgot-password {
   text-align: right; /* Right-align */
 }
@@ -111,8 +120,14 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+  border: 1px solid transparent;
 }
 
+.btn-login:hover {
+  width: 100%;
+  border: 1px solid var(--color-cta);
+  color: var(--color-cta);
+}
 /* Media Queries */
 
 @media (max-width: 1000px) {
