@@ -55,6 +55,11 @@ body {
   width: 100%;
 }
 
+.error-message{
+  color: #EF4444; font-size: 0.875rem; display: none;
+  margin-bottom:1rem;
+}
+
 .input-with-icon {
   display: flex;
   align-items: center;
